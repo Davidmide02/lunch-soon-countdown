@@ -1,76 +1,115 @@
-*{
+:root {
+    --grayishblue: hsl(237, 18%, 59%);
+    --softred: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Darkdesaturatedblue: hsl(236, 21%, 26%);
+    --Verydarkblue: hsl(235, 16%, 14%);
+    --Verydarkblue: hsl(234, 17%, 12%);
+}
+
+
+* {
     padding: 0;
     margin: 0;
+
 }
-
-body{
-    padding: 2rem;
-    background-color:   hsl(236, 21%, 26%);
-    background-image: url(./images/pattern-hills.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    background-position-x: center;
-    background-position-y: bottom;
-    height: 80vh;
-    color: white;
-    /* background-size: cover; */
-}
-
-/* Grayish blue: hsl(237, 18%, 59%)
-- Soft red: hsl(345, 95%, 68%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Dark desaturated blue: hsl(236, 21%, 26%)
-- Very dark blue: hsl(235, 16%, 14%)
-- Very dark (mostly black) */
-
-/* section {
-     background-image: url(./images/bg-stars.svg);
-     height: 100vh;
-     /* background-color: hsl(234, 17%, 12%) ; */
-     /* linear-gradient(hsl(345, 95%, 68%),hsl(345, 95%, 68%)), */
-    
-/* }  */
 
 section {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    height: 100%;
-    background-image: url(./images/bg-stars.svg);
-}
-
-section .we {
-    grid-column: 2/ span 6;
-    width: 90%;
-    justify-content: center;
-    font-size: 4rem ;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-section .timeDisplay {
-    grid-column: 2/ span 6;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.timeDisplay div {
+    padding: 2rem 0rem;
+    background-image: url(./images/pattern-hills.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--Verydarkblue);
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+section .we {
+
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+}
+
+.surface {
+    background-image: url(./images/bg-stars.svg);
+}
+
+.timeDisplay {
+    margin-top: 2rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* width: 100%; */
 }
 
 .inner {
-    /* background-color: green; */
-     /* border: 2px solid yellow; */
-    width: 10rem;
-    height: 50%;
+    background-color: var(--Darkdesaturatedblue);
+    height: 7rem;
+    width: 8rem;
+    padding: 1.5rem 0rem 0rem 0rem;
+    margin-right: 1rem;
     text-align: center;
-    font-size: 2rem;
-    color: hotpink;
+    font-size: 4rem;
+    color: var(--softred);
+    animation: tanimate 10s linear infinite;
+    border-radius: 4px;
 }
+
+@keyframes tanimate {
+
+    0% {
+        border-top: 4px solid var(--softred);
+    }
+
+    25% {
+        border-right: 4px solid var(--White);
+    }
+
+    50% {
+        border-bottom: 4px solid blue;
+    }
+
+    75% {
+        border-left: 4px solid red;
+    }
+    100% {
+        border-top: none;
+    }
+
+}
+
+.inner h1 {
+    margin-top: 4rem;
+}
+
+
+.attribution {
+    margin-top: 3rem;
+    color: var(--White);
+}
+
+.attribution a {
+    color: var(--softred);
+}
+
+.social {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.social img:hover {
+    background-color: var(--softred);
+}
+
+/* .controlDivs {
+    display: flex;
+} */
