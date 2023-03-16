@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Davidmide02/lunch-soon-countdown.git)
+- Solution URL: [solution URL ](https://github.com/Davidmide02/lunch-soon-countdown.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
