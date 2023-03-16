@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL ](https://github.com/Davidmide02/lunch-soon-countdown.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://davidmde-lunch-countdown-time.netlify.app/)
 
 ### Built with
 
